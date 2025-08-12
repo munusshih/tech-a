@@ -1,8 +1,7 @@
 ---
-title: "Week X Title"
+title: "Title"
 description: "Brief description of what this week covers and the main learning objectives."
 week: 1
-heroImage: "../../assets/week-placeholder-1.jpg"
 ---
 
 ## This is just regular markdown content
