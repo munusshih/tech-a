@@ -1,7 +1,7 @@
 ---
 title: "Markdown Style Guide"
 description: "Here is a sample of some basic Markdown syntax that can be used when writing Markdown content in Astro."
-week: 4
+week: 0
 heroImage: "../../assets/week-placeholder-1.jpg"
 ---
 
