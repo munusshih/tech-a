@@ -1,6 +1,6 @@
 ---
 import { type CollectionEntry, getCollection, render } from "astro:content";
-import WeekPost from "../../layouts/WeekPost.astro";
+import WeekPost from "@/layouts/WeekPost.astro";
 
 export async function getStaticPaths() {
   const posts = await getCollection("weeks");

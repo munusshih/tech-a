@@ -1,6 +1,5 @@
 ---
 import { getCollection } from "astro:content";
-import { Image } from "astro:assets";
 
 // Get all posts from the weeks collection, filter out files starting with _, sorted by week number
 const posts = (await getCollection("weeks"))
@@ -14,17 +13,10 @@ const posts = (await getCollection("weeks"))
       <ul>
         {posts.map((post) => (
           <li>
-            <a href={`/weeks/${post.id}/`}>
-              {post.data.heroImage && (
-                <Image
-                  width={720}
-                  height={360}
-                  src={post.data.heroImage}
-                  alt=""
-                />
-              )}
-              <h4 class="title">{post.data.title}</h4>
-              <p class="week-info">Week {post.data.week}</p>
+            <a href={`/${post.id}/`}>
+              <h4 class="title">
+                Week {post.data.week}: {post.data.title}
+              </h4>
             </a>
           </li>
         ))}
